@@ -1,0 +1,160 @@
+﻿@model List<QuanLySach.ModelsView.CartItemS>
+@{
+    ViewData["Title"] = "Xem giỏ hàng";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var returnUrl = Context.Request.Query["ReturnUrl"];
+}
+<div class="shopping-cart section">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<!-- Shopping Summery -->
+				<table class="table shopping-summery">
+					<thead>
+						<tr class="main-hading" style="">
+							<th class="text-bg-light">Sản Phẩm</th>
+							<th class ="text-bg-light">Tên</th>
+							<th class="text-bg-light">Dơn giá</th>
+							<th class="text-bg-light">Số Lượng</th>
+							<th class="text-bg-light">TOTAL</th>
+							<th class="text-bg-light"><i class="ti-trash remove-icon"></i></th>
+						</tr>
+					</thead>
+					<tbody>
+						@if(Model!= null && Model.Count() > 0)
+						{
+							foreach (var item in Model)
+							{
+								<tr>
+									<td class="image" data-title="No"><img src="~/images/products/@item.product.Thumb" alt="#"></td>
+									<td class="product-des" data-title="Description">
+										<p class="product-name"><a href="#">@item.product.ProductName</a></p>
+										<p class="product-des">@item.product.Title</p>
+									</td>
+									<td class="price" data-title="Price"><span>@item.product.Price </span></td>
+									
+										<!-- Input Order -->
+									<td class="qty" data-title="Qty">
+										<!-- Input Order -->
+									<td class="quantity">
+										
+											<input data-mahh="@item.product.ProductId" style="                                                                                                " data-dongia="@item.product.Price" class="cartItem cart-plus-minus-box" value="@item.amount" min="1" type="number">
+										
+									</td>
+										<!--/ End Input Order -->
+									</td>
+										<!--/ End Input Order -->
+									
+									<td class="total-amount" data-title="Total"><span>@item.TotalMoney.ToString("#,##0")</span></td>
+									<td class="action" data-title="Remove"><a href="#"><i class="ti-trash remove-icon"></i></a></td>
+								</tr>
+							}
+							
+							
+						}
+					
+						
+					</tbody>
+				</table>
+				<!--/ End Shopping Summery -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<!-- Total Amount -->
+				<div class="total-amount">
+					<div class="row">
+						<div class="col-lg-8 col-md-5 col-12">
+							<div class="left">
+								<div class="coupon">
+									<form action="#" target="_blank">
+										<input name="Coupon" placeholder="Enter Your Coupon">
+										<button class="btn">Apply</button>
+									</form>
+								</div>
+								<div class="checkbox">
+									<label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox"> Shipping (+10$)</label>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-7 col-12">
+							<div class="right">
+								<ul>
+									<li>Tổng tiền<span>@Model.Sum(x=>x.TotalMoney).ToString("#,##0")</span></li>
+									<li>Shipping<span>Free</span></li>
+									<li class="last">Thanh Toán<span>@Model.Sum(x=>x.TotalMoney).ToString("#,##0")</span></li>
+								</ul>
+								@if (User.Identity.IsAuthenticated)
+								{
+									<div class="button5">
+										<a href="#" class="btn">Checkout</a>
+										<a href="/products.html" class="btn">Continue shopping</a>
+									</div>
+								}
+								else
+								{
+									<div class="button5">
+										<a href="/danhnhap.html?returnUrl=/checkout.html" class="btn">Checkout</a>
+										<a href="/products.html" class="btn">Continue shopping</a>
+									</div>
+								}
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--/ End Total Amount -->
+			</div>
+		</div>
+	</div>
+</div>
+@section Scripts{
+	<script>
+		$(function () {
+			function loadHeaderCart() {
+				$('#miniCart').load("/AjaxContent/HeaderCart");
+				$('#numberCart').load("/AjaxContent/NumberCart");
+			}
+			$(".removecart").click(function () {
+				var productid = $(this).attr("data-mahh");
+				$.ajax({
+					url: "api/cart/remove",
+					type: "POST",
+					dataType: "JSON",
+					data: { productID: productid },
+					success: function (result) {
+						if (result.success) {
+							loadHeaderCart();//Reload lai gio hang
+							location.reload();
+						}
+					},
+					error: function (rs) {
+						alert("Remove Cart Error !")
+					}
+				});
+			});
+			$(".cartItem").click(function () {
+				var productid = $(this).attr("data-mahh");
+				var soluong = parseInt($(this).val());
+				$.ajax({
+					url: "api/cart/update",
+					type: "POST",
+					dataType: "JSON",
+					data: {
+						productID: productid,
+						amount: soluong
+					},
+					success: function (result) {
+						if (result.success) {
+							loadHeaderCart();//Reload lai gio hang
+							window.location = 'cart.html';
+						}
+					},
+					error: function (rs) {
+						alert("Cập nhật Cart Error !")
+					}
+				});
+			});
+		});
+	</script>
+}

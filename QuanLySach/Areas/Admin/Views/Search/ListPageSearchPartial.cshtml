@@ -1,0 +1,45 @@
+﻿@model List<Page>
+@if (Model != null)
+{
+    foreach (var item in Model)
+    {
+        <tr>
+
+            <td>
+                @item.PageId
+            </td>
+            <td href="">
+                <img class="img-slider" style="max-width: 100px" src="~/images/pages/@item.Thumb">
+            </td>
+            <td>
+                <div class="d-flex align-items-center">
+                    <img class="img-fluid rounded" src="assets/images/others/thumb-9.jpg" style="max-width: 60px" alt="">
+                    <h6 class="m-b-0 m-l-10">@item.PageName</h6>
+                </div>
+            </td>
+            <td>
+                @item.Cat.CatName
+            </td>
+            <td>
+                @if (item.Published == true)
+                {
+                    <div class="btn btn-success rounded-pill">Active</div>
+
+                }
+                else
+                {
+                    <div class="btn btn-danger rounded-pill">Block</div>
+                }
+            </td>
+
+            <td>@Html.Raw(@item.Contents)</td>
+
+            <td>
+                <a class="badge text-bg-info" asp-area="Admin" asp-controller="Pages" asp-action="Details" asp-route-id="@item.PageId">Chi tiết</a>
+                <a class="badge text-bg-warning" asp-area="Admin" asp-controller="Pages" asp-action="Edit" asp-route-id="@item.PageId">Sửa</a>
+                <a class="badge text-bg-danger" asp-area="Admin" asp-controller="Pages" asp-action="Delete" asp-route-id="@item.PageId">Xóa</a>
+
+            </td>
+        </tr>
+    }
+}

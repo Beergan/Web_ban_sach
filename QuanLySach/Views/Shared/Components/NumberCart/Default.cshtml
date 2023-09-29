@@ -1,0 +1,12 @@
+﻿@model List<QuanLySach.ModelsView.CartItemS>
+
+@if(Model!=null && Model.Count() > 0)
+{
+
+    <a href="#" class="single-icon"><i class="ti-bag"></i> <span class="total-count">@Model.Count()</span></a>
+}
+else
+{
+    <a href="#" class="single-icon"><i class="ti-bag"></i> <span class="total-count">0</span></a>
+}
+

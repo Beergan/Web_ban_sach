@@ -1,0 +1,103 @@
+﻿@model QuanLySach.Models.Page
+
+@{
+    ViewData["Title"] = "Create";   
+    Layout = "~/Areas/Admin/Views/Shared/_Admin_Layout.cshtml";
+}
+
+
+<form asp-controller="Pages" asp-action="Create" method="post" enctype="multipart/form-data">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="page-header no-gutters has-tab">
+        <div class="d-md-flex m-b-15 align-items-center justify-content-between">
+            <div class="m-b-15">
+                <button class="btn btn-primary">
+                    <i class="anticon anticon-save"></i>
+                    <span>Save</span>
+                </button>
+            </div>
+        </div>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#product-edit-basic">Basic Info</a>
+            </li>
+        </ul>
+    </div>
+    <div class="tab-content m-t-15">
+        <div class="tab-pane fade show active" id="product-edit-basic">
+            <div class="card">
+                <div class="card-body">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <div class="form-group">
+                        <label class="font-weight-semibold" for="pagename">Tên Page</label>
+                        <input type="text" class="form-control" asp-for="PageName">
+                    </div>
+                    <label class="font-weight-semibold" for="pageCategory">Danh mục sản phẩm</label>
+                    <select class="form-select form-select-sm" asp-for="CatId" style="width: 200px;" asp-items="ViewBag.danhmuc">
+                        <option value="" disabled selected>Chọn danh mục</option>
+                    </select>
+                    <div class="form-group">
+                        <label class="font-weight-semibold" for="ShortDesc">Ordering</label>
+                        <input type="text" class="form-control" asp-for="Ordering">
+                    </div>
+                    <div class="card-body">
+                            <label class="font-weight-semibold">
+                                Thông tin chi tiết
+                            </label>
+                            <textarea typeof="text" class="editor1" id="editor1" rows="10"  asp-for="Contents"></textarea>
+                        </div>
+                    </div>
+                <div class="card-body" style="height:50px">
+                        <label class="font-weight-semibold" for="productBrand">Ảnh đại diện</label>
+                    <input name="fThumb" type="file" class="font-weight-light" asp-for="Thumb" />
+                        <span asp-validation-for="Thumb" class="text-danger"></span>
+                    </div>
+                <div class="card-body">
+                        
+                    <div class="card-body">
+                        Thông Tin Seo
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label class="font-weight-semibold" for="productSize">Title</label>
+                                <input type="text" class="form-control" asp-for="Title">
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-semibold" for="productColors">MetaDesc</label>
+                                <input type="text" class="form-control" asp-for="MetaDesc">
+                            </div>
+                            <div class="form-group">
+                                <label class="font-weight-semibold" for="productFit">MetaKey</label>
+                                <input type="text" class="form-control" asp-for="MetaKey">
+                            </div>
+                            <div class="m-t-25">
+                                <div class="form-group d-flex align-items-center">
+                                    <div class="form-check form-switch">
+                                        <input class="form-check-input" asp-for="Published" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                        <label class="form-check-label" for="flexSwitchCheckChecked">Published</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    </div>
+                   
+            </div>
+        </div>
+
+
+    
+</form>
+@section Scripts{
+
+
+    <script>
+        CKEDITOR.replace('editor1')
+
+    </script>
+}
+    
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

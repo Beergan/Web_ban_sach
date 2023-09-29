@@ -1,0 +1,55 @@
+﻿@model List<QuanLySach.ModelsView.CartItemS>
+
+@if(Model!=null && Model.Count() > 0)
+{
+	<div class="shopping-item">
+		<div class="dropdown-cart-header">
+			<span>@Model.Count()</span>
+			<a href="#">View Cart</a>
+		</div>
+		<ul class="shopping-list">
+			@foreach(var item in Model)
+			{
+				string url = $"/product/{item.product.ProductName}-{item.product.ProductId}.html";
+				<li>
+					
+					<a class="cart-img" href="@url">
+						<img scr="~/images/products/@item.product.Thumb" alt="@item.product.ProductName">
+					</a>
+					<h4><a href="@url">@item.product.ProductName</a></h4>
+					<p class="quantity"><span class="amount">@item.amount x @item.product.Price.Value.ToString("#,##0") </span></p>
+				</li>
+			}
+
+		
+		</ul>
+		<div class="bottom">
+			<div class="total">
+				<span>Tổng Tiền</span>
+				<span class="total-amount">@Model.Sum(x=>x.TotalMoney).ToString("#,##0")</span>
+			</div>
+			@if (User.Identity.IsAuthenticated)
+			{
+				<a href="/cart.html" class="btn animate">Giỏ Hàng</a>
+				<a href="/checkout.html" class="btn animate">Thanh Toán</a>
+
+			}
+			else
+			{
+
+				<a href="/cart.html" class="btn animate">Giỏ Hàng</a>
+				<a href="/danhnhap.html?returnUrl=/checkout.html" class="btn animate">Thanh Toán</a>
+			}
+			
+		</div>
+	</div>
+}
+else
+{
+	<div class="shopping-item">
+		<p>Chưa có sản phẩm</p>
+	</div>
+	
+}
+
+

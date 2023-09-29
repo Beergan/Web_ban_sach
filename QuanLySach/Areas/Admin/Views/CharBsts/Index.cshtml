@@ -1,0 +1,163 @@
+﻿@using PagedList.Core.Mvc
+@model PagedList.Core.IPagedList<QuanLySach.Models.CharBst>
+
+@{
+    int CurrentPage = ViewBag.CurrentPage;
+    ViewData["Title"] = "Nhân Vật" + "Trang:" + CurrentPage;
+    Layout = "~/Areas/Admin/Views/Shared/_Admin_Layout.cshtml";
+}
+
+
+<div class="col-lg-4 text-right">
+    <a class="btn btn-primary" asp-area="Admin" asp-controller="CharBsts" asp-action="Create"><span>Thêm sản phẩm</span></a>
+</div>
+<div class="card">
+    <div class="card-body">
+        <div class="row m-b-30">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-affix m-v-10">
+                            <i class="prefix-icon anticon anticon-search opacity-04"></i>
+                            <input id="keyword" name="keyword" type="text" class="form-control" placeholder="Tìm kiếm sản phẩm">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-affix m-v-10">
+                            <select class="form-select form-select-sm" id="txtProductId" name="txtProductId" style="width: 200px" aria-label=".form-select-sm example" ;" asp-items="ViewBag.danhmuc">
+                                <option selected>Chọn danh mục</option>
+                                <option value="0">Chọn tất cả</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="table-responsive">
+            <table class="table table-hover e-commerce-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Hình ảnh</th>
+                        <th>Tên sản phẩm</th>
+                        <th>Danh mục</th>
+                        <th>Giá</th>
+                        <th>Tồn kho</th>
+                        <th>Trạng thái</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="loading">
+                    @if (Model != null)
+                    {
+                        foreach (var item in Model)
+                        {
+                            <tr>
+
+                                <td>
+                                    @item.CharId
+                                </td>
+                                <td href="">
+                                    <img class="img-slider" style="max-width: 100px" src="~/images/CharBTS/@item.Thumb">
+                                </td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid rounded" src="assets/images/others/thumb-9.jpg" style="max-width: 60px" alt="">
+                                        <h6 class="m-b-0 m-l-10">@item.CharName</h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    @item.Product.ProductName
+                                </td>
+
+                               <td>@item.Price VNĐ</td>
+                                <td>@item.UnitsInStock</td>
+                                <td>
+                                    @if (item.UnitsInStock.Value  > 0 )
+                                    { 
+                                        <div class="d-flex align-items-center">
+                                            <div class="btn btn-success rounded-pill">Còn Hàng</div>
+
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="d-flex align-items-center">
+                                            <div class="btn btn-danger rounded-pill">Hết hàng</div>
+
+                                        </div>
+                                    }
+
+                                <td>
+                                    <a class="badge text-bg-info" asp-area="Admin" asp-controller="CharBsts" asp-action="Details" asp-route-id="@item.CharId">Chi tiết</a>
+                                    <a class="badge text-bg-warning" asp-area="Admin" asp-controller="CharBsts" asp-action="Edit" asp-route-id="@item.CharId">Sửa</a>
+                                    <a class="badge text-bg-danger" asp-area="Admin" asp-controller="CharBsts" asp-action="Delete" asp-route-id="@item.CharId">Xóa</a>
+
+                                </td>
+                            </tr>
+                        }
+                    }
+
+
+                </tbody>
+            </table>
+            <div aria-label="Page navigation example">
+                <ul class="pagination">
+                    <pager class="pager-container" list="@Model" asp-area="Admin" asp-controller="CharBsts" asp-route-CatId="@ViewBag.ProductID" asp-action="Index" />
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            jQuery("#txtProductId").change(function () {
+                var ProductID = jQuery(this).children(":selected").attr("value");
+                ProductID = parseFloat(ProductID);
+                $('#txtProductId option')
+                    .removeAttr('selected');
+                $("#txtProductId > [value=" + ProductID + "]").attr("selected", "true");
+                $.ajax({
+                    url: '/Admin/CharBsts/Filtter',
+                    datatype: "json",
+                    type: "GET",
+                    data: {
+                        ProductID: ProductID
+                    },
+                    async: true,
+                    success: function (results) {
+                        if (results.status == "success") {
+                            window.location.href = results.redirectUrl;
+                        }
+                    },
+                    error: function (xhr) {
+                        alert('error');
+                    }
+                });
+            });
+
+            $("#keyword").keyup(function () {
+                var strkeyword = $('#keyword').val();
+                $.ajax({
+                    url: '/Admin/Search/FindChar/',
+                    datatype: "json",
+                    type: "POST",
+                    data: { keyword: strkeyword },
+                    async: true,
+                    success: function (results) {
+                        $("#loading").html("");
+                        $("#loading").html(results);
+                    },
+                    error: function (xhr) {
+                        alert('error');
+                    }
+                });
+            });
+        });
+    </script>
+
+}

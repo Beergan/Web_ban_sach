@@ -1,0 +1,120 @@
+﻿@model QuanLySach.ModelsView.Register
+
+@{
+    ViewData["Title"] = "Đăng kys thanh vien";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Styles{
+    <link rel="stylesheet" href="~/asscess/login/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="~/asscess/login/css/style.css">
+
+}
+
+<body>
+
+    <div class="main">
+
+        <!-- Sign up form -->
+        <!-- Sing in  Form -->
+        <section class="sign-up">
+            <div class="container11">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Sign up</h2>
+                        <form asp-action="Register" class="register-form" id="register-form">
+                            <div asp-validation-summary="ModelOnly" ></div>
+                            <div class="form-group1">
+                                <label asp-for="FullName"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" asp-for="FullName"  placeholder="Your Name" />
+                                <span asp-validation-for="FullName" ></span>
+                            </div>
+                            <div class="form-group1">
+                                <label asp-for="Email"><i class="zmdi zmdi-email"></i></label>
+                                <input asp-for="Email" type="email" onblur="CheckEmail(this.value)" placeholder="Your Email" />
+                                <span asp-validation-for="Email" ></span>
+                            </div>
+                            <div class="form-group1">
+                                <label asp-for="Phone"><i class="zmdi zmdi-phone"></i></label>
+                                <input asp-for="Phone" type="tel" onblur="CheckPhone(this.value)" placeholder="Your Phone" />
+                                <span asp-validation-for="Phone"></span>
+                            </div>
+                            <div class="form-group1">
+                                <label asp-for="Password"><i class="zmdi zmdi-lock"></i></label>
+                                <input asp-for="Password" type="password" placeholder="Password" />
+                                <span asp-validation-for="Password" ></span>
+                            </div>
+                            <div class="form-group1">
+                                <label asp-for="ConfirmPassword"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input asp-for="ConfirmPassword" type="password"  placeholder="Repeat your password" />
+                                <span asp-validation-for="ConfirmPassword" ></span>
+                            </div>
+                            <div class="form-group">
+                                <input asp-for="checkbox" type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label asp-for="checkbox" for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                                 <span asp-validation-for="checkbox" ></span>
+                            </div>
+                            <div class="form-group1 form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="~/asscess/login/images/signup-image.jpg" alt="sing up image"></figure>
+                        <a href="#" class="signup-image-link">I am already member</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JS -->
+
+
+</body>
+@section Scripts{
+    <script src="~/asscess/login/vendor/jquery/jquery.min.js"></script>
+    <script src="~/asscess/login/js/main.js"></script>
+    <script>
+        function CheckEmail(email) {
+            $.ajax({
+                type: "GET",
+                url: "/Customer/CheckEmail",
+                data: { Email: email },
+                success: function (response) {
+                    if (response == true) {
+                        // Email chưa được sử dụng
+                    } else {
+                        // Email đã được sử dụng
+                        alert(response);
+                    }
+                }
+            });
+        }
+    </script>
+    <script>
+        function CheckPhone(phone) {
+            $.ajax({
+                type: "GET",
+                url: "/Customer/CheckPhone",
+                data: { Phone: phone },
+                success: function (response) {
+                    if (response == true) {
+                        // Số điện thoại chưa được sử dụng
+                    } else {
+                        // Số điện thoại đã được sử dụng
+                        alert(response);
+                    }
+                }
+            });
+        }
+    </script>
+
+   
+
+}
+
+

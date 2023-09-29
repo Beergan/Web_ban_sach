@@ -1,0 +1,113 @@
+﻿@model QuanLySach.Models.TinDang
+
+@{
+    ViewData["Title"] = "Chi Tiết" +": "+Model.Title;
+    Layout = "~/Areas/Admin/Views/Shared/_Admin_Layout.cshtml";
+}
+
+<h1>@Model.Title</h1>
+
+<div>
+   
+    <hr />
+    <dd class="col-sm-10">
+        <img class="img-slider" style="max-width: 100px" src="~/images/tindangs/@Model.Thumb">
+    </dd>
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Tên:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class = "col-sm-2"> 
+            Đánh giá
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Scontents)
+        </dd>
+       
+        <dt class = "col-sm-2">
+            Trang Thái
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Published)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Alias)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Alias)
+        </dd>
+        <dt class="col-sm-2">
+            Ngày Tạo 
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+        <dt class = "col-sm-2">
+           Tác Giả
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Author)
+        </dd>
+        <dt class = "col-sm-2">
+            Nhân Viên
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AccountId)
+        </dd>
+        <dt class = "col-sm-2">
+           Tag
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tags)
+        </dd>
+        <dt class = "col-sm-2">
+            Danh Mục
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Cat.CatName)
+        </dd>
+        <dt class = "col-sm-2">
+            Hot
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IsHot)
+        </dd>
+        <dt class = "col-sm-2">
+            New
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IsNewfeed)
+        </dd>
+        <dt class = "col-sm-2">
+           Key
+        </dt>
+        <dd class = "col-sm-10">
+            Mô tả
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MetaDesc)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MetaDesc)
+        </dd>
+        <dt class = "col-sm-2">
+           Lượt Xem
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Views)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.PostId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+@section Scripts{
+    <script>
+        CKEDITOR.replace('editor1',{readonly :true})
+    </script>
+}

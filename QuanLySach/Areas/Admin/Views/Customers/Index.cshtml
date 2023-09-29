@@ -1,0 +1,81 @@
+﻿@using PagedList.Core.Mvc
+@model PagedList.Core.IPagedList<QuanLySach.Models.Customer>
+
+@{
+    int CurrentPage = ViewBag.CurrentPage;
+    ViewData["Title"] = "Quản lý khách hàng" + CurrentPage;
+    Layout = "~/Areas/Admin/Views/Shared/_Admin_Layout.cshtml";
+}
+ <div class="page-header">
+     <span>
+         Danh Sách Khánh Hàng: @CurrentPage
+     </span>
+ </div>
+
+<p>
+    <a class="badge text-bg-info" asp-action="Create">Tạo tài khoản</a>
+</p>
+<table>
+<tr>
+ 
+    <th>
+            <select class="form-select form-select-sm" id="IdStatús" name="IdStatus" style="width: 200px" aria-label=".form-select-sm example" ; ">
+                <option value="" selected> Chọn Trạng Thái </option>
+          
+        </select>
+    </th>
+
+</tr>
+</table>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Ten</th>
+            <th>SDT</th>
+            <th>EMail</th>
+            <th>Trạng thái</th>
+            <th>Trức vụ</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @if(Model != null)
+        @foreach (var item in Model) {
+        <tr>
+            <td>@item.CustomerId</td>
+                <td>
+                    @item.FullName
+                </td>
+                <td>
+                    @item.Phone
+                </td>
+                <td>
+                    @item.Email
+                </td>
+                <td>
+                        @if (item.Active)
+                        {
+                            <div  class="btn btn-success rounded-pill">Active</div>
+                        }
+                        else
+                        {
+                            <div class="btn btn-danger rounded-pill">Block</div>
+                        }
+
+                </td>
+                <td>
+                    @item.Address
+                </td>
+            <td>
+                        <a class="badge text-bg-info" asp-action="Edit" asp-route-id="@item.CustomerId">Edit</a> |
+                        <a class="badge text-bg-warning" asp-action="Details" asp-route-id="@item.CustomerId">Details</a> |
+                        <a class="badge text-bg-danger" asp-action="Delete" asp-route-id="@item.CustomerId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+

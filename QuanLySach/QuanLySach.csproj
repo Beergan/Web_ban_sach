@@ -1,0 +1,296 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNet.ScriptManager.jQuery" Version="3.6.0" />
+    <PackageReference Include="AspNetCoreHero.ToastNotification" Version="1.1.0" />
+    <PackageReference Include="Bootstrap" Version="5.3.1" />
+    <PackageReference Include="jQuery" Version="3.6.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="7.0.9" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="PagedList.Core.Mvc" Version="3.0.0" />
+    <PackageReference Include="PagedList.Mvc" Version="4.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Data\" />
+    <Folder Include="Areas\Admin\Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Admincess\ckeditor\adapters\jquery.js" />
+    <None Include="wwwroot\Admincess\ckeditor\build-config.js" />
+    <None Include="wwwroot\Admincess\ckeditor\CHANGES.md" />
+    <None Include="wwwroot\Admincess\ckeditor\ckeditor.js" />
+    <None Include="wwwroot\Admincess\ckeditor\config.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\af.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\ar.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\az.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\bg.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\bn.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\bs.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\ca.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\cs.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\cy.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\da.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\de-ch.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\de.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\el.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\en-au.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\en-ca.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\en-gb.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\en.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\eo.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\es-mx.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\es.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\et.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\eu.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\fa.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\fi.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\fo.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\fr-ca.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\fr.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\gl.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\gu.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\he.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\hi.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\hr.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\hu.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\id.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\is.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\it.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\ja.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\ka.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\km.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\ko.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\ku.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\lt.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\lv.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\mk.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\mn.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\ms.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\nb.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\nl.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\no.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\oc.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\pl.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\pt-br.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\pt.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\ro.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\ru.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\si.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\sk.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\sl.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\sq.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\sr-latn.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\sr.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\sv.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\th.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\tr.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\tt.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\ug.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\uk.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\vi.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\zh-cn.js" />
+    <None Include="wwwroot\Admincess\ckeditor\lang\zh.js" />
+    <None Include="wwwroot\Admincess\ckeditor\LICENSE.md" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\af.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\ar.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\az.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\bg.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\ca.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\cs.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\cy.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\da.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\de-ch.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\de.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\el.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\en-au.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\en-gb.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\en.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\eo.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\es-mx.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\es.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\et.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\eu.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\fa.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\fi.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\fo.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\fr-ca.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\fr.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\gl.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\gu.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\he.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\hi.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\hr.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\hu.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\id.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\it.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\ja.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\km.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\ko.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\ku.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\lt.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\lv.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\mk.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\mn.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\nb.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\nl.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\no.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\oc.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\pl.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\pt-br.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\pt.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\ro.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\ru.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\si.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\sk.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\sl.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\sq.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\sr-latn.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\sr.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\sv.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\th.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\tr.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\tt.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\ug.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\uk.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\vi.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\zh-cn.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\a11yhelp\dialogs\lang\zh.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\about\dialogs\about.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\clipboard\dialogs\paste.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\dialog\dialogDefinition.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\image\dialogs\image.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\link\dialogs\anchor.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\link\dialogs\link.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\pastefromgdocs\filter\default.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\pastefromlibreoffice\filter\default.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\pastefromword\filter\default.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\pastetools\filter\common.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\pastetools\filter\image.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\scayt\CHANGELOG.md" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\scayt\dialogs\options.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\scayt\LICENSE.md" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\scayt\README.md" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\af.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\ar.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\az.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\bg.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\ca.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\cs.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\cy.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\da.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\de-ch.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\de.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\el.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\en-au.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\en-ca.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\en-gb.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\en.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\eo.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\es-mx.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\es.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\et.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\eu.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\fa.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\fi.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\fr-ca.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\fr.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\gl.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\he.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\hr.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\hu.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\id.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\it.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\ja.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\km.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\ko.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\ku.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\lt.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\lv.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\nb.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\nl.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\no.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\oc.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\pl.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\pt-br.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\pt.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\ro.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\ru.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\si.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\sk.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\sl.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\sq.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\sr-latn.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\sr.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\sv.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\th.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\tr.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\tt.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\ug.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\uk.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\vi.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\zh-cn.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\lang\zh.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\specialchar\dialogs\specialchar.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\tabletools\dialogs\tableCell.js" />
+    <None Include="wwwroot\Admincess\ckeditor\plugins\table\dialogs\table.js" />
+    <None Include="wwwroot\Admincess\ckeditor\README.md" />
+    <None Include="wwwroot\Admincess\ckeditor\samples\img\logo.svg" />
+    <None Include="wwwroot\Admincess\ckeditor\samples\js\sample.js" />
+    <None Include="wwwroot\Admincess\ckeditor\samples\js\sf.js" />
+    <None Include="wwwroot\Admincess\ckeditor\samples\old\assets\posteddata.php" />
+    <None Include="wwwroot\Admincess\ckeditor\samples\old\assets\uilanguages\languages.js" />
+    <None Include="wwwroot\Admincess\ckeditor\samples\old\dialog\assets\my_dialog.js" />
+    <None Include="wwwroot\Admincess\ckeditor\samples\old\sample.js" />
+    <None Include="wwwroot\Admincess\ckeditor\samples\old\sample_posteddata.php" />
+    <None Include="wwwroot\Admincess\ckeditor\samples\toolbarconfigurator\font\fontello.svg" />
+    <None Include="wwwroot\Admincess\ckeditor\samples\toolbarconfigurator\js\abstracttoolbarmodifier.js" />
+    <None Include="wwwroot\Admincess\ckeditor\samples\toolbarconfigurator\js\fulltoolbareditor.js" />
+    <None Include="wwwroot\Admincess\ckeditor\samples\toolbarconfigurator\js\toolbarmodifier.js" />
+    <None Include="wwwroot\Admincess\ckeditor\samples\toolbarconfigurator\js\toolbartextmodifier.js" />
+    <None Include="wwwroot\Admincess\ckeditor\samples\toolbarconfigurator\lib\codemirror\codemirror.js" />
+    <None Include="wwwroot\Admincess\ckeditor\samples\toolbarconfigurator\lib\codemirror\javascript.js" />
+    <None Include="wwwroot\Admincess\ckeditor\samples\toolbarconfigurator\lib\codemirror\LICENSE" />
+    <None Include="wwwroot\Admincess\ckeditor\samples\toolbarconfigurator\lib\codemirror\show-hint.js" />
+    <None Include="wwwroot\Admincess\ckeditor\SECURITY.md" />
+    <None Include="wwwroot\Admincess\ckeditor\skins\moono-lisa\readme.md" />
+    <None Include="wwwroot\Admincess\ckeditor\styles.js" />
+    <None Include="wwwroot\Admincess\ckeditor\vendor\promise.js" />
+    <None Include="wwwroot\asscess\login\.sass-cache\21880c0ffe15753a53f8402e9f64e1077e071510\style.scssc" />
+    <None Include="wwwroot\asscess\login\.sass-cache\2866be86c578bb583fbf023501bb9fd24cc3bf22\extend.scssc" />
+    <None Include="wwwroot\asscess\login\.sass-cache\2866be86c578bb583fbf023501bb9fd24cc3bf22\fonts.scssc" />
+    <None Include="wwwroot\asscess\login\.sass-cache\2866be86c578bb583fbf023501bb9fd24cc3bf22\global.scssc" />
+    <None Include="wwwroot\asscess\login\.sass-cache\2866be86c578bb583fbf023501bb9fd24cc3bf22\minxi.scssc" />
+    <None Include="wwwroot\asscess\login\.sass-cache\2866be86c578bb583fbf023501bb9fd24cc3bf22\variables.scssc" />
+    <None Include="wwwroot\asscess\login\.sass-cache\3948936f84e1a30385e73a9be140b58b48c82e15\style.scssc" />
+    <None Include="wwwroot\asscess\login\.sass-cache\643489b018602f15119d8f44aeb7fc79468873a9\main.scssc" />
+    <None Include="wwwroot\asscess\login\.sass-cache\643489b018602f15119d8f44aeb7fc79468873a9\responsive.scssc" />
+    <None Include="wwwroot\asscess\login\.sass-cache\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\extend.scssc" />
+    <None Include="wwwroot\asscess\login\.sass-cache\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\fonts.scssc" />
+    <None Include="wwwroot\asscess\login\.sass-cache\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\global.scssc" />
+    <None Include="wwwroot\asscess\login\.sass-cache\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\minxi.scssc" />
+    <None Include="wwwroot\asscess\login\.sass-cache\7643c8aa2e335ff5e104bc47d8dd7f1a0693bb39\variables.scssc" />
+    <None Include="wwwroot\asscess\login\.sass-cache\9dc767a56f3dc2f8a933300255cd2265f13191d4\main.scssc" />
+    <None Include="wwwroot\asscess\login\.sass-cache\9dc767a56f3dc2f8a933300255cd2265f13191d4\responsive.scssc" />
+  </ItemGroup>
+
+</Project>

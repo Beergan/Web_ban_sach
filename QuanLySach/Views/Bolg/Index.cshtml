@@ -1,0 +1,80 @@
+﻿@using PagedList.Core.Mvc
+@model PagedList.Core.IPagedList<QuanLySach.Models.TinDang>
+
+
+@{
+    int CurrentPage = ViewBag.CurrentPage;
+    ViewData["Title"] = "Bolg" + ": " + CurrentPage;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int PageCurrent = CurrentPage;
+    int PageNext = CurrentPage + 1;
+}
+
+@await Html.PartialAsync("~/Views/Shared/Breadcrumbs.cshtml")
+<div class="shop-blog">
+    <div class="container">
+        <div class="row">
+            @if (Model != null && Model.Count() > 0)
+            {
+                foreach (var item in Model)
+                {
+                    string url = $"/tin-tuc/{item.Alias}-{item.PostId}.html";
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="single-product">
+                            <div class="product-img">
+                                <a href="@url">
+                                    <img class="default-img" src="~/images/tindangs/@item.Thumb" alt="@item.Title">
+                                </a>
+                            </div>
+                            <div class="blog-content">
+                                <div class="blog-meta text-dim-gray pb-3">
+                                    <ul>
+                                        <li class="date"><i class="fa fa-calendar-o me-2"></i>@item.CreatedDate.Value.ToShortDateString()</li>
+                                        <li>
+                                            <span class="comments me-3">
+                                                <a href="javascript:void(0)">2 Comments</a>
+                                            </span>
+                                            <span class="link-share">
+                                                <a href="javascript:void(0)">Share</a>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h5 class="title mb-4">
+                                    <a href="@url">@item.Title</a>
+                                </h5>
+                                <p class="short-desc mb-5"></p>
+                                <div class="button-wrap">
+                                    <a class="btn btn-custom-size lg-size btn-dark rounded-0" href="@url">Xem Thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+            }
+         
+        </div>
+        <nav aria-label="Page navigation example" >
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="@PageCurrent-1">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item active"><a class="page-link">@PageCurrent</a></li>
+                <li class="page-item"><a class="page-link" href="#">@PageNext</a></li>
+                
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="@PageCurrent+1">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+   
+
+</div>
+
+

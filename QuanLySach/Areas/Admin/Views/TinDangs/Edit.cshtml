@@ -1,0 +1,123 @@
+﻿@model QuanLySach.Models.TinDang
+
+@{
+    ViewData["Title"] = "Chỉnh sửa tin thức" + ": " + Model.Title;
+    Layout = "~/Areas/Admin/Views/Shared/_Admin_Layout.cshtml";
+}
+
+
+<div class="page-header">
+    <div class="header-sub-title">
+        <nav class="breadcrumb breadcrumb-dash">
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="breadcrumb-item"><i class="anticon anticon-home m-r-5"></i>Trang chủ</a>
+            <span class="breadcrumb-item active"> Chỉnh sửa tin tức</span>
+        </nav>
+    </div>
+</div>
+
+<form asp-controller="TinDangs" asp-action="Edit" method="post" enctype="multipart/form-data">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="PostId" />
+    <input type="hidden" asp-for="Thumb" />
+    
+    <div class="page-header no-gutters has-tab">
+        <div class="d-md-flex m-b-15 align-items-center justify-content-between">
+            <div class="m-b-15">
+                <button class="btn btn-primary">
+                    <i class="anticon anticon-plus-circle"></i>
+                    <span>Chỉnh sửa tin tức</span>
+                </button>
+            </div>
+        </div>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#product-edit-basic">THÔNG TIN TIN TỨC</a>
+            </li>
+        </ul>
+    </div>
+    <div class="tab-content m-t-15">
+        <div class="tab-pane fade show active" id="product-edit-basic">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group">
+                        <label class="font-weight-semibold" for="productName">Tiêu đề</label>
+                        <input type="text" class="form-control" asp-for="Title">
+                    </div>
+                    <label class="font-weight-semibold" for="pageCategory">Danh mục sản phẩm</label>
+                    <select class="form-select form-select-sm" asp-for="CatId" style="width: 200px;" asp-items="ViewBag.danhmuc">
+                        <option value="" disabled selected>Chọn danh mục</option>
+                    </select>
+
+                    <div class="card-body">
+                        <label class="font-weight-semibold" for="productBrand">Ảnh đại diện</label>
+                        <input name="fThumb" type="file" class="form-control-file" asp-for="Thumb" />
+                        <span asp-validation-for="Thumb" class="text-danger"></span>
+                    </div>
+                    <div class="card-body">
+                        <textarea typeof="text" class="editor1" id="editor1" rows="10" asp-for="Contents"></textarea>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label class="font-weight-semibold" for="productColors">Tác Giả</label>
+                            <input type="text" class="form-control" asp-for="Author">
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-semibold" for="productColors">Bí Danh</label>
+                            <input type="text" class="form-control" asp-for="Alias">
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-semibold" for="productColors">Mô tả</label>
+                            <input type="text" class="form-control" asp-for="MetaDesc">
+                        </div>
+                        <div class="form-group">
+                            <label class="font-weight-semibold" for="productFit">Key</label>
+                            <input type="text" class="form-control" asp-for="MetaKey">
+                        </div>
+                        <div class="form-group d-flex align-items-center">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" asp-for="Published" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Published</label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group d-flex align-items-center">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" asp-for="IsHot" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Hot</label>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group d-flex align-items-center">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" asp-for="IsNewfeed" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">New</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+</form>
+
+@section Scripts{
+
+
+    <script>
+        CKEDITOR.replace('editor1')
+
+    </script>
+}
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+﻿@using PagedList.Core.Mvc
+@model PagedList.Core.IPagedList<QuanLySach.Models.Category>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_Admin_Layout.cshtml";
+}
+
+<div class="col-lg-4 text-right">
+    <a class="badge text-bg-info" style="margin" asp-area="Admin" asp-controller="Categories" asp-action="Create"><span>Thêm danh mục</span></a>
+</div>
+<div class="card">
+    <div class="card-body">
+        <div class="row m-b-30">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-affix m-v-10">
+                            <i class="prefix-icon anticon anticon-search opacity-04"></i>
+                            <input id="keyword" name="keyword" type="text" class="form-control" placeholder="Tìm kiếm danh mục">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-affix m-v-10">
+                            <select class="form-select form-select-sm" id="IdStatus" name="IdStatus" style="width: 200px" aria-label=".form-select-sm example" ;" asp-items="ViewBag.danhmuc">
+                                <option selected>Chọn danh mục</option>
+                                <option value="0">Chọn tất cả</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="table-responsive">
+            <table class="table table-hover e-commerce-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tên Danh Mục</th>
+                        <th>Nội Dung</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="records_table">
+                    @if (Model != null)
+                    {
+                        foreach (var item in Model)
+                        {
+                            <tr>
+
+                                <td>
+                                    @item.CatId
+                                </td>
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <img class="img-fluid rounded" src="assets/images/others/thumb-9.jpg" style="max-width: 60px" alt="">
+                                        <h6 class="m-b-0 m-l-10">@item.CatName</h6>
+                                    </div>
+                                </td>
+                                <td>
+                                    @item.Description
+                                </td>
+                                <td>
+                                    <a class="badge text-bg-info" asp-area="Admin" asp-controller="Products" asp-action="Details" asp-route-id="@item.CatId">Chi tiết</a>
+                                    <a class="badge text-bg-warning" asp-area="Admin" asp-controller="Products" asp-action="Edit" asp-route-id="@item.CatId">Sửa</a>
+                                    <a class="badge text-bg-danger" asp-area="Admin" asp-controller="Products" asp-action="Delete" asp-route-id="@item.CatId">Xóa</a>
+
+                                </td>
+                            </tr>
+                        }
+                    }
+
+
+                </tbody>
+            </table>
+            <div aria-label="Page navigation example">
+                <ul class="pagination">
+                    <pager class="pager-container" list="@Model" asp-area="Admin" asp-controller="Categorys" asp-route-CatID="@ViewBag.CurrentCateID" asp-action="Index" />
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

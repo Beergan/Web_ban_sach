@@ -15,7 +15,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using QuanLySach.Models;
-using static System.Reflection.Metadata.BlobBuilder;
+using Microsoft.AspNetCore.Http;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,6 +27,7 @@ IServiceCollection serviceCollection = builder.Services.AddDbContext<BooksContex
 
 });
 // Add services to the container.
+
 builder.Services.AddControllersWithViews();
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 builder.Services.AddNotyf(config =>
@@ -42,20 +44,21 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
              {
                  p.Cookie.Name = "UserLoginCookie";
                  p.ExpireTimeSpan = TimeSpan.FromDays(1);
-                 p.LoginPath = "/danhnhap.html";
-                 p.LogoutPath = "/dang-xuat/html";
+                 //p.LoginPath = "/danhnhap.html";
+                 //p.LogoutPath = "/dang-xuat/html";
                  p.AccessDeniedPath = "/not-found.html";
              });
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
-}
+
+//if (!app.Environment.IsDevelopment())
+//{
+//    app.UseExceptionHandler("/Home/Error");
+//    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+//    app.UseHsts();
+//}
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseSession();
@@ -69,7 +72,11 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
-
+if (!app.Environment.IsDevelopment())
+{
+	app.UseExceptionHandler("/Home/Error");
+	app.UseHsts();
+}
 
 
 app.MapControllerRoute(

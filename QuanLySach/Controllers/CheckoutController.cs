@@ -1,14 +1,17 @@
 ﻿using AspNetCoreHero.ToastNotification.Abstractions;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using QuanLySach.Extension;
 using QuanLySach.Helpper;
 using QuanLySach.Models;
+using Microsoft.AspNetCore.Http;
 using QuanLySach.ModelsView;
 
-namespace QuanLySach.Controllers
+namespace WebShop.Controllers
 {
 	public class CheckoutController : Controller
 	{
@@ -35,7 +38,7 @@ namespace QuanLySach.Controllers
 		public IActionResult Index(string returnUrl = null)
 		{
 			//Lay gio hang ra de xu ly
-			var cart = HttpContext.Session.Get<List<CartItemS>>("GioHang");
+			List<CartItemS> cart = HttpContext.Session.Get<List<CartItemS>>("GioHang");
 			var taikhoanID = HttpContext.Session.GetString("CustomerId");
 			MuaHangVM model = new MuaHangVM();
 			if (taikhoanID != null)

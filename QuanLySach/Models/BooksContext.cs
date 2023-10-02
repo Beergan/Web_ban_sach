@@ -154,12 +154,6 @@ public partial class BooksContext : DbContext
 
         modelBuilder.Entity<Customer>(entity =>
         {
-            entity.ToTable(tb =>
-                {
-                    tb.HasTrigger("CheckDuplicateEmail");
-                    tb.HasTrigger("CheckDuplicatePhoneNumber");
-                });
-
             entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
             entity.Property(e => e.Address).HasMaxLength(255);
             entity.Property(e => e.Avatar).HasMaxLength(255);

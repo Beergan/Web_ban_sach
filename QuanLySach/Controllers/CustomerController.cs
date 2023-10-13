@@ -15,7 +15,6 @@ using QuanLySach.ModelsView;
 using System.Linq;
 using PagedList.Core;
 using Microsoft.EntityFrameworkCore;
-using System.Security.Principal;
 
 namespace QuanLySach.Controllers
 {
@@ -34,7 +33,7 @@ namespace QuanLySach.Controllers
         public IActionResult CheckPhone(string Phone)
         {
             try {
-                var customers = _context.Customers.AsNoTracking().SingleOrDefault(x => x.Phone.ToLower() == Phone.ToLower());
+                var customers = _context.Customers.AsNoTracking().SingleOrDefault(x => x.Phone!.ToLower() == Phone.ToLower());
                 if(customers != null)
                 {
                     return Json(data: " Số điện thoại"+Phone + " đã sự dụng ");
@@ -53,7 +52,7 @@ namespace QuanLySach.Controllers
         [AllowAnonymous]
         public IActionResult CheckEmail(string  Email) {
             try {
-                var customers = _context.Customers.AsNoTracking().SingleOrDefault(x => x.Email.ToLower() == Email.ToLower());
+                var customers = _context.Customers.AsNoTracking().SingleOrDefault(x => x.Email!.ToLower() == Email.ToLower());
                 if (customers != null)
                 {
                     return Json(data: "Email đã được đăng ký");
@@ -73,7 +72,8 @@ namespace QuanLySach.Controllers
                 var customer = _context.Customers.AsNoTracking().SingleOrDefault(x => x.CustomerId == Convert.ToInt32(customerID));
                 if (customer != null)
                 {
-                    var DSdonhang = _context.Orders.AsNoTracking().Where(x => x.CustomerId == customer.CustomerId).OrderByDescending(x => x.OrderDate).ToList();
+                    var DSdonhang = _context.Orders.AsNoTracking().Include(x=>x.TransactStatus)
+                        .Where(x => x.CustomerId == customer.CustomerId).OrderByDescending(x => x.OrderDate).ToList();
                     ViewBag.DonHang = DSdonhang;
                     return View(customer);
                     
@@ -96,37 +96,41 @@ namespace QuanLySach.Controllers
         [HttpPost]
         [AllowAnonymous]
         [Route("Register.html", Name = "Register")]
-        public async Task<IActionResult> Register(Register Ctm )
+        public async Task<IActionResult> Register(ModelsView.Register Ctm )
         {
             try
             {
                 if (ModelState.IsValid)
                 {
-
-					string a = Utilities.GetRandomKey();
+                   
+				    string a = Utilities.GetRandomKey();
                     Customer customer = new Customer
                     {
                         FullName = Ctm.FullName,
-                        Phone = Ctm.Phone.Trim().ToLower(System.Globalization.CultureInfo.CurrentCulture),
-                        Email = Ctm.Email.Trim().ToLower(System.Globalization.CultureInfo.CurrentCulture),
+                        Phone = Ctm.Phone!.Trim().ToLower(),
+                        Email = Ctm.Email!.Trim().ToLower(),
                         Password = (Ctm.Password + a.Trim()).ToMD5(),
                         Active = true,
                         Salt = a,
                         CreateDate = DateTime.Now
-                    };             
+                    };
+                  
+                    
+                    
                     try
                     {
 
                         _context.Add(customer);
                         await _context.SaveChangesAsync();
-						// lưu thông tin khách hàng 
-						HttpContext.Session.SetString("CustomerId", customer.CustomerId.ToString());
+                        // lưu thông tin khách hàng 
+                        HttpContext.Session.SetString("CustomerId", customer.CustomerId.ToString());
                         var CtmID = HttpContext.Session.GetString("CustomerId");
                         // xác minh danh tính
                         var claims = new List<Claim> {
-						    new Claim(ClaimTypes.Name, customer.Email), // Sử dụng email làm tên duy nhất
+                            new Claim(ClaimTypes.NameIdentifier, customer.CustomerId.ToString()),
                             new Claim("CustomerId", customer.CustomerId.ToString()),
-						};
+                            new Claim(ClaimTypes.Name, customer.Email),
+                        };
                         ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, "login");
                         // đại điện cho người dùng
                         ClaimsPrincipal claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
@@ -135,6 +139,10 @@ namespace QuanLySach.Controllers
                         return RedirectToAction("MyAcount", "Customer");
 
                     }
+
+                   
+
+
                     
                     catch
                     {
@@ -175,9 +183,9 @@ namespace QuanLySach.Controllers
                 {
                     bool Email = Utilities.IsValidEmail(lg.UserName);
                     if (!Email)  return View(lg); 
-                    var  customer = _context.Customers.AsNoTracking().SingleOrDefault(x => x.Email.Trim() == lg.UserName);
+                    var  customer = _context.Customers.AsNoTracking().SingleOrDefault(x => x.Email!.Trim() == lg.UserName);
                     if (customer == null)  return RedirectToAction("Register"); 
-                    string  pass  = (lg.Password + customer.Salt.Trim()).ToMD5();
+                    string  pass  = (lg.Password + customer.Salt!.Trim()).ToMD5();
                     if (customer.Password !=pass)
                     {
                         _notyfService.Error("thông tin chưa chính xác");
@@ -190,26 +198,25 @@ namespace QuanLySach.Controllers
                         return RedirectToAction("Register", "Customer");
 
                     }
-					HttpContext.Session.SetString("CustomerId", customer.CustomerId.ToString());
-					var taikhoanID = HttpContext.Session.GetString("CustomerId");
-					var claims = new List<Claim>
-                    {
-							new Claim(ClaimTypes.NameIdentifier, customer.CustomerId.ToString()),
-							new Claim("CustomerId", customer.CustomerId.ToString()),
-							new Claim(ClaimTypes.Name, customer.Email),
 
+                    HttpContext.Session.SetString("CustomerId", customer.CustomerId.ToString());
+					var taikhoanID = HttpContext.Session.GetString("CustomerId");
+                    var claims = new List<Claim>
+                    {
+						new Claim(ClaimTypes.NameIdentifier, customer.CustomerId.ToString()),
+							new Claim("CustomerId", customer.CustomerId.ToString()),
+							new Claim(ClaimTypes.Name, customer.Email!),
 					};
 					
 					//var claimsIdentity = new ClaimsIdentity(claims);
 					//await HttpContext.SignInAsync(new ClaimsPrincipal(claimsIdentity));
 					//await HttpContext.SignInAsync(claimsPrincipal);
 					ClaimsIdentity claimsIdentity = new ClaimsIdentity(claims, "login");
-					ClaimsPrincipal claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
-					await HttpContext.SignInAsync(claimsPrincipal);
-					_notyfService.Success("Đăng nhập thành công");
-					if (string.IsNullOrEmpty(returnUrl))
-                    { 
-						return RedirectToAction("MyAcount", "Customer");
+                    ClaimsPrincipal claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
+                    await HttpContext.SignInAsync(claimsPrincipal);
+                    if (string.IsNullOrEmpty(returnUrl))
+                        {
+                        return RedirectToAction("MyAcount", "Customer");
                     }
                     else
                     {

@@ -548,13 +548,13 @@ D:\luận văn tốt nghiệp\QuanLySach\QuanLySach\bin\Debug\net7.0\System.Code
 D:\luận văn tốt nghiệp\QuanLySach\QuanLySach\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
 D:\luận văn tốt nghiệp\QuanLySach\QuanLySach\bin\Debug\net7.0\System.Memory.Data.dll
 D:\luận văn tốt nghiệp\QuanLySach\QuanLySach\bin\Debug\net7.0\System.Runtime.Caching.dll
-D:\luận văn tốt nghiệp\QuanLySach\QuanLySach\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-D:\luận văn tốt nghiệp\QuanLySach\QuanLySach\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 D:\luận văn tốt nghiệp\QuanLySach\QuanLySach\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
 D:\luận văn tốt nghiệp\QuanLySach\QuanLySach\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 D:\luận văn tốt nghiệp\QuanLySach\QuanLySach\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 D:\luận văn tốt nghiệp\QuanLySach\QuanLySach\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\luận văn tốt nghiệp\QuanLySach\QuanLySach\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\luận văn tốt nghiệp\QuanLySach\QuanLySach\obj\Debug\net7.0\QuanLySach.MvcApplicationPartsAssemblyInfo.cs
 D:\luận văn tốt nghiệp\QuanLySach\QuanLySach\obj\Debug\net7.0\QuanLySach.sourcelink.json
 D:\luận văn tốt nghiệp\QuanLySach\QuanLySach\bin\Debug\net7.0\AspNet.ScriptManager.jQuery.dll
+D:\luận văn tốt nghiệp\QuanLySach\QuanLySach\bin\Debug\net7.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\luận văn tốt nghiệp\QuanLySach\QuanLySach\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\luận văn tốt nghiệp\QuanLySach\QuanLySach\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll

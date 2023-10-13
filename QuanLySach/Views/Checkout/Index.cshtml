@@ -18,36 +18,44 @@
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="form-group">
 									<label>HỌ và tên<span>*</span></label>
-									<input asp-for="FullName" type="text" name="name" placeholder="" required="required">
+									<input asp-for="FullName" type="text" >
 								</div>
 							</div>
 						
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="form-group">
 									<label>Địa ch<span>*</span></label>
-									<input asp-for="Email" type="email" name="email" placeholder="" required="required">
+									<input asp-for="Email" type="text">
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="form-group">
 									<label>Số điện thoại<span>*</span></label>
-									<input asp-for="Phone" type="number" name="number" placeholder="" required="required">
+									<input asp-for="Phone" type="text">
 								</div>
 							</div>
 							<div class="col-lg-6 col-md-6 col-12">
 								<div class="form-group">
 									<label>Địa chỉ nhận hàng<span>*</span></label>
-									<input asp-for="Address" type="text" name="address" placeholder="" required="required">
+									<input asp-for="Address" type="text">
 								</div>
 							</div>
-							<div class="col-lg-6 col-md-6 col-12">
+						@* 	<div class="col-lg-6 col-md-6 col-12">
 								<div class="form-group">
 									<label>Ghi chú<span>*</span></label>
-									<input asp-for="Note" type="text" name="address" placeholder="" required="required">
+									<input asp-for="Note" type="text" >
 								</div>
-							</div>
+							</div> *@
 					
 						</div>
+						<div class="single-widget get-button">
+							<div class="content">
+								<div class="button">
+									<input class="btn" style="background-color:black" value="XÁC NHẬN ĐẶT HÀNG" type="submit">
+								</div>
+							</div>
+						</div>
+						<!--/ End Button Widget -->
 					</form>
 					<!--/ End Form -->
 				</div>
@@ -58,7 +66,6 @@
 					<div class="single-widget">
 						<h2>Đơn Hàng</h2>
 						<div class="content">
-							
 							<ul>
 								@if ( Carts.Count() > 0)
 								{
@@ -97,14 +104,7 @@
 					</div>
 					<!--/ End Payment Method Widget -->
 					<!-- Button Widget -->
-					<div class="single-widget get-button">
-						<div class="content">
-							<div class="button">
-								<a href="#" class="btn">Xác Nhận Thanh Toán</a>
-							</div>
-						</div>
-					</div>
-					<!--/ End Button Widget -->
+					
 				</div>
 			</div>
 		</div>

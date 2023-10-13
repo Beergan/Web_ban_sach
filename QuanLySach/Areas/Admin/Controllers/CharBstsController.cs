@@ -31,7 +31,7 @@ namespace QuanLySach.Areas.Admin.Controllers
         {
             var PageNumber = page;
             var PageSize = 20;
-            List<CharBst> lsChar = new List<CharBst>();
+            List<CharBst> lsChar = new();
             if (ProductID != 0)
             {
                 lsChar = _context.CharBsts
@@ -102,7 +102,7 @@ namespace QuanLySach.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                charBst.CharName = Utilities.ToTitleCase(charBst.CharName);
+                charBst.CharName = Utilities.ToTitleCase(charBst.CharName!);
                 if (fThumb != null)
                 {
                     string ex = Path.GetExtension(fThumb.FileName);
@@ -153,7 +153,7 @@ namespace QuanLySach.Areas.Admin.Controllers
             {
                 try
                 {
-                    charBst.CharName = Utilities.ToTitleCase(charBst.CharName);
+                    charBst.CharName = Utilities.ToTitleCase(charBst.CharName!);
                     if (fThumb != null)
                     {
                         string ex = Path.GetExtension(fThumb.FileName);

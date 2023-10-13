@@ -25,10 +25,12 @@
             <ul class="nav-group-items">
                 <li class="nav-item"><a class="nav-link" asp-area="Admin" asp-controller="Categories" asp-action="Index"><span class="nav-icon"></span> Danh sách danh mục</a></li>
                 <li class="nav-item"><a class="nav-link" asp-area="Admin" asp-controller="Products" asp-action="Index" ><span class="nav-icon"></span> Danh sách sản phẩm</a></li>
-                <li class="nav-item"><a class="nav-link" asp-area="Admin" asp-controller="Authors" asp-action="Index"><span class="nav-icon"></span> Danh sách sản phẩm</a></li>
-        </li>
+                <li class="nav-item"><a class="nav-link" asp-area="Admin" asp-controller="Authors" asp-action="Index"><span class="nav-icon"></span> Danh sách tác giả</a></li>
+                
             </ul>
         </li>
+            
+       
         <li class="nav-group">
             <a class="nav-link nav-group-toggle" href="#">
                 <svg class="nav-icon">
@@ -57,9 +59,7 @@
                 </svg> Quản lý đơn hàng
             </a>
             <ul class="nav-group-items">
-                
-                <li class="nav-item"><a class="nav-link" href="icons/coreui-icons-brand.html"> Danh sách đơn hàng</a></li>
-                
+                <li class="nav-item"><a asp-area="Admin" asp-controller="Orders" asp-action="Index" class="nav-link"><span class="nav-icon"></span> Danh sách khách hàng</a></li>
             </ul>
         </li>
 

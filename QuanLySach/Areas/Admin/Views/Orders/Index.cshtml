@@ -1,0 +1,159 @@
+﻿@using PagedList.Core.Mvc
+@model PagedList.Core.IPagedList<QuanLySach.Models.Order>
+
+@{
+    int CurrentPage = ViewBag.CurrentPage;
+    ViewData["Title"] = "Danh sách đơn hàng" + CurrentPage; ;
+    Layout = "~/Areas/Admin/Views/Shared/_Admin_Layout.cshtml";
+}
+<div id="PlaceHo" ></div>
+<div class="page-header">
+    <span>
+        Danh Sách Khánh Hàng: @CurrentPage
+    </span>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <div class="row m-b-30">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="input-affix m-v-10">
+                            <i class="prefix-icon anticon anticon-search opacity-04"></i>
+                            <input id="keyword" name="keyword" type="text" class="form-control" placeholder="Tìm kiếm danh mục">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-affix m-v-10">
+                            <select class="form-select form-select-sm" id="IdStatus" name="IdStatus" style="width: 200px" aria-label=".form-select-sm example" ;" asp-items="ViewBag.danhmuc">
+                                <option selected>Chọn danh mục</option>
+                                <option value="0">Chọn tất cả</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>tài khoản</th>
+            <th>SDT</th>
+            <th>địa chỉ</th>
+            <th>ghi chú</th>
+            <th>Tổng tiền</th>
+            <th>Trạng thái</th>
+            <th>Ngày mua</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+            @if (Model != null)
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>@item.OrderId?</td>
+                    <td>
+                            @item.Customer?.Email
+                    </td>
+                    <td>
+                            @item.Customer?.Phone
+                    </td>
+                    <td>
+                            @item.Address
+                    </td>
+                    <td>
+                        @item.Note
+                    </td>
+                 
+                     <td>
+                            @item.TotalMoney.ToString("#,##0") VNĐ
+
+                    </td>
+                            <td>
+                                @item.TransactStatus.Status
+
+                            </td>
+                    <td>
+                            @item.OrderDate
+                    </td>
+                    <td>
+                        
+                       @*  <a data-target="#modal-header" data-toggle="modal" class="badge text-bg-info" asp-area="Admin" asp-controller="Orders" asp-action="ChangeStatus" asp-route-id="@item.OrderId">Cập nhật trạng thái</a>
+                              *@
+                                <a data-target="#modal fade" data-toggle="modal" class="btn btn-secondary btn-tone m-r-5" asp-area="Admin" asp-controller="Orders" asp-action="ChangeStatus" asp-route-id="@item.OrderId">Cập nhật trạng thái</a>
+                        <a class="badge text-bg-warning" asp-action="Details" asp-route-id="@item.OrderId">Details</a> 
+                        <a class="badge text-bg-danger" asp-action="Delete" asp-route-id="@item.OrderId">Delete</a>
+                                <button data-coreui-target="#exampleModal" data-coreui-toggle="ajax-modal" class="badge text-bg-warning" data-coreui-url="@Url.Action("ChangeStatus")">
+                         Trạng Thái
+                        </button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"  data-url="@Url.Action("ChangeStatus", "Orders", new { id = item.OrderId })">
+                                    cập nhật
+                                </button>
+                    </td>
+                </tr>
+                }
+    </tbody>
+</table>
+        <div aria-label="Page navigation example">
+            <ul class="pagination">
+                <pager class="pager-container" list="@Model" asp-area="Admin" asp-controller="Orders" asp-action="Index" />
+            </ul>
+        </div>
+
+</div>
+
+</div>
+<!-- Button trigger modal -->
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+
+
+<!-- Scrollable modal -->
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+
+<!-- Modal -->
+
+
+ @section Scripts {
+    <!-- Đoạn mã JavaScript dưới đây sẽ kết nối nút với action DisplayModal trong controller và hiển thị modal. -->
+        @* <script>
+            $('#exampleModal').on('show.bs.modal', function (event) {
+                var modal = $(this);
+                $.get('@Url.Action("ChangeStatusAsync", "OrdersController")', function (data) {
+                    modal.find('.modal-body').html(data);
+                });
+            });
+        </script> *@
+    <script>
+        $('#exampleModal').on('show.bs.modal', function (event) {
+            var modal = $(this);
+            var button = $(event.relatedTarget); // Nút mà bạn đã nhấp vào
+            var url = button.attr("data-url"); // Lấy URL từ thuộc tính data-url của nút
+
+            // Sử dụng Ajax để lấy nội dung từ view ChangeStatus và đặt nó trong modal
+
+            modal.find('.modal-content').load(url);
+            
+        });
+    </script>
+    
+
+}

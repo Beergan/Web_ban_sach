@@ -28,11 +28,12 @@ namespace QuanLySach.Areas.Admin.Controllers
             var PageSize = 20;
             var lsCustomers = _context.Customers
                 .AsNoTracking()
-                .Include(x=>x.Location)
+                
                 .OrderByDescending(x => x.CreateDate);
             PagedList<Customer> models = new PagedList<Customer>(lsCustomers, PageNumber, PageSize);
             ViewBag.CurrentPage = PageNumber;
             return View(models);
+            
 
 
         }
@@ -46,7 +47,7 @@ namespace QuanLySach.Areas.Admin.Controllers
             }
 
             var customer = await _context.Customers
-                .Include(c => c.Location)
+                
                 .FirstOrDefaultAsync(m => m.CustomerId == id);
             if (customer == null)
             {
@@ -59,7 +60,7 @@ namespace QuanLySach.Areas.Admin.Controllers
         // GET: Admin/Customers/Create
         public IActionResult Create()
         {
-            ViewData["LocationId"] = new SelectList(_context.Locations, "LocationId", "LocationId");
+           
             return View();
         }
 
@@ -76,7 +77,6 @@ namespace QuanLySach.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["LocationId"] = new SelectList(_context.Locations, "LocationId", "LocationId", customer.LocationId);
             return View(customer);
         }
 
@@ -93,7 +93,6 @@ namespace QuanLySach.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            ViewData["LocationId"] = new SelectList(_context.Locations, "LocationId", "LocationId", customer.LocationId);
             return View(customer);
         }
 
@@ -129,7 +128,6 @@ namespace QuanLySach.Areas.Admin.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["LocationId"] = new SelectList(_context.Locations, "LocationId", "LocationId", customer.LocationId);
             return View(customer);
         }
 
@@ -142,7 +140,7 @@ namespace QuanLySach.Areas.Admin.Controllers
             }
 
             var customer = await _context.Customers
-                .Include(c => c.Location)
+               
                 .FirstOrDefaultAsync(m => m.CustomerId == id);
             if (customer == null)
             {

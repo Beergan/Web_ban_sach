@@ -1,179 +1,179 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.3.1\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\defaultuser0.LAPTOP-POTNR7PE\\.nuget\\packages\\bootstrap\\5.0.0\\contentFiles\\any\\any\\wwwroot\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js.map"
     },
     {
@@ -4205,6 +4205,182 @@
       "PackagePath": "staticwebassets\\Admincess\\base\\tooltips.html"
     },
     {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\bootstrap\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\Admincess\\bootstrap\\js\\bootstrap.min.js.map"
+    },
+    {
       "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\buttons\\button-group.html",
       "PackagePath": "staticwebassets\\Admincess\\buttons\\button-group.html"
     },
@@ -6971,6 +7147,458 @@
     {
       "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\js\\widgets.js.map",
       "PackagePath": "staticwebassets\\Admincess\\js\\widgets.js.map"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\.DS_Store",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\.DS_Store"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\css\\.DS_Store",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\css\\.DS_Store"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\css\\bootstrap\\.DS_Store",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\css\\bootstrap\\.DS_Store"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\css\\bootstrap\\_media.css",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\css\\bootstrap\\_media.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\css\\bootstrap\\mixins\\.DS_Store",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\css\\bootstrap\\mixins\\.DS_Store"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\css\\bootstrap\\mixins\\_border-radius.css",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\css\\bootstrap\\mixins\\_border-radius.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\css\\bootstrap\\mixins\\_screen-reader.css",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\css\\bootstrap\\mixins\\_screen-reader.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\css\\bootstrap\\mixins\\_transition.css",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\css\\bootstrap\\mixins\\_transition.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\css\\bootstrap\\mixins\\_visibility.css",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\css\\bootstrap\\mixins\\_visibility.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\css\\bootstrap\\utilities\\_stretched-link.css",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\css\\bootstrap\\utilities\\_stretched-link.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\css\\style.css",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\css\\style.css"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\fonts\\.DS_Store",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\fonts\\.DS_Store"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\images\\.DS_Store",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\images\\.DS_Store"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\images\\anhvuive.png",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\images\\anhvuive.png"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\images\\bg-1.jpg",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\images\\bg-1.jpg"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\js\\.DS_Store",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\js\\.DS_Store"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\js\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\js\\main.js",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\js\\main.js"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\js\\popper.js",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\js\\popper.js"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\.DS_Store",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\.DS_Store"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\.DS_Store",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\.DS_Store"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_alert.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_alert.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_badge.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_badge.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_breadcrumb.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_button-group.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_button-group.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_buttons.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_buttons.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_card.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_card.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_carousel.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_carousel.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_close.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_close.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_code.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_code.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_custom-forms.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_custom-forms.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_dropdown.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_forms.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_forms.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_functions.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_functions.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_grid.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_grid.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_images.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_images.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_input-group.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_input-group.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_jumbotron.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_jumbotron.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_list-group.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_list-group.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_media.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_media.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_mixins.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_mixins.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_modal.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_modal.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_nav.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_nav.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_navbar.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_navbar.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_pagination.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_pagination.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_popover.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_popover.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_print.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_print.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_progress.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_progress.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_reboot.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_reboot.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_root.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_root.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_spinners.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_spinners.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_tables.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_tables.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_toasts.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_toasts.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_tooltip.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_transitions.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_transitions.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_type.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_type.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_utilities.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_utilities.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\_variables.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\_variables.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\bootstrap.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_background-variant.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_background-variant.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_badge.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_badge.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_deprecate.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_float.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_float.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_grid-framework.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_grid-framework.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_hover.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_hover.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_image.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_nav-divider.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_nav-divider.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_screen-reader.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_size.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_size.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_table-row.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_table-row.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_text-emphasis.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_text-emphasis.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_text-hide.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_text-hide.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_visibility.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\mixins\\_visibility.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_align.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_align.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_background.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_background.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_borders.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_borders.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_clearfix.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_display.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_display.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_embed.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_embed.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_flex.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_flex.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_float.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_float.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_overflow.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_overflow.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_position.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_position.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_screenreaders.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_screenreaders.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_shadows.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_shadows.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_sizing.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_sizing.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_spacing.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_spacing.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_stretched-link.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_text.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_text.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_visibility.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\utilities\\_visibility.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\bootstrap\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\bootstrap\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\loginadmin\\scss\\style.scss",
+      "PackagePath": "staticwebassets\\Admincess\\loginadmin\\scss\\style.scss"
     },
     {
       "Id": "D:\\luận văn tốt nghiệp\\QuanLySach\\QuanLySach\\wwwroot\\Admincess\\notifications\\alerts.html",

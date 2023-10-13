@@ -8,12 +8,12 @@ namespace QuanLySach.ModelsView
 		public int CustomerId { get; set; }
 
 		[Required(ErrorMessage = "Vui lòng nhập Họ và Tên")]
-		public string  FullName { get; set; }
-		public string  Email { get; set; }
+		public string ? FullName { get; set; }
+		public string ? Email { get; set; }
 		[Required(ErrorMessage = "Vui lòng nhập số điện thoại")]
-		public string  Phone { get; set; }
+		public string ? Phone { get; set; }
 		[Required(ErrorMessage = "Địa chỉ nhận hàng")]
-		public string  Address { get; set; }
+		public string ? Address { get; set; }
 		[Required(ErrorMessage = "Vui lòng chọn Tỉnh/Thành")]
 		public int TinhThanh { get; set; }
 		[Required(ErrorMessage = "Vui lòng chọn Quận/Huyện")]

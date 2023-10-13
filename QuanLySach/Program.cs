@@ -17,7 +17,6 @@ using Microsoft.Extensions.Hosting;
 using QuanLySach.Models;
 using Microsoft.AspNetCore.Http;
 
-
 var builder = WebApplication.CreateBuilder(args);
 
 IServiceCollection serviceCollection = builder.Services.AddDbContext<BooksContext>(options =>
@@ -27,7 +26,6 @@ IServiceCollection serviceCollection = builder.Services.AddDbContext<BooksContex
 
 });
 // Add services to the container.
-
 builder.Services.AddControllersWithViews();
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 builder.Services.AddNotyf(config =>

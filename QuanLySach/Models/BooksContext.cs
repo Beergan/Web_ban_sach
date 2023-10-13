@@ -29,8 +29,6 @@ public partial class BooksContext : DbContext
 
     public virtual DbSet<Customer> Customers { get; set; }
 
-    public virtual DbSet<Location> Locations { get; set; }
-
     public virtual DbSet<Order> Orders { get; set; }
 
     public virtual DbSet<OrderDetail> OrderDetails { get; set; }
@@ -164,7 +162,6 @@ public partial class BooksContext : DbContext
                 .IsFixedLength();
             entity.Property(e => e.FullName).HasMaxLength(255);
             entity.Property(e => e.LastLogin).HasColumnType("datetime");
-            entity.Property(e => e.LocationId).HasColumnName("LocationID");
             entity.Property(e => e.Password).HasMaxLength(50);
             entity.Property(e => e.Phone)
                 .HasMaxLength(12)
@@ -172,30 +169,12 @@ public partial class BooksContext : DbContext
             entity.Property(e => e.Salt)
                 .HasMaxLength(8)
                 .IsFixedLength();
-
-            entity.HasOne(d => d.Location).WithMany(p => p.Customers)
-                .HasForeignKey(d => d.LocationId)
-                .HasConstraintName("FK_Customers_Locations");
-        });
-
-        modelBuilder.Entity<Location>(entity =>
-        {
-            entity.HasKey(e => e.LocationId).HasName("PK_Location");
-
-            entity.Property(e => e.LocationId)
-                .ValueGeneratedNever()
-                .HasColumnName("LocationID");
-            entity.Property(e => e.Name).HasMaxLength(50);
-            entity.Property(e => e.NameWithType).HasMaxLength(100);
-            entity.Property(e => e.Slug).HasMaxLength(100);
-            entity.Property(e => e.Type).HasMaxLength(10);
         });
 
         modelBuilder.Entity<Order>(entity =>
         {
             entity.Property(e => e.OrderId).HasColumnName("OrderID");
             entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
-            entity.Property(e => e.LocationId).HasColumnName("LocationID");
             entity.Property(e => e.OrderDate).HasColumnType("datetime");
             entity.Property(e => e.PaymentDate).HasColumnType("datetime");
             entity.Property(e => e.PaymentId).HasColumnName("PaymentID");

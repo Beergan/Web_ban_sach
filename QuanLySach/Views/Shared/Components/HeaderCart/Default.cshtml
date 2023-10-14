@@ -10,14 +10,14 @@
 		<ul class="shopping-list">
 			@foreach(var item in Model)
 			{
-				string url = $"/product/{item.product.ProductName}-{item.product.ProductId}.html";
+				string url = $"/product/{item.product!.ProductName}-{item.product.ProductId}.html";
 				<li>
 					
 					<a class="cart-img" href="@url">
 						<img scr="~/images/products/@item.product.Thumb" alt="@item.product.ProductName">
 					</a>
 					<h4><a href="@url">@item.product.ProductName</a></h4>
-					<p class="quantity"><span class="amount">@item.amount x @item.product.Price.Value.ToString("#,##0") </span></p>
+					<p class="quantity"><span class="amount">@item.amount x @item.product.Price!.Value.ToString("#,##0") </span></p>
 				</li>
 			}
 
@@ -28,7 +28,7 @@
 				<span>Tổng Tiền</span>
 				<span class="total-amount">@Model.Sum(x=>x.TotalMoney).ToString("#,##0")</span>
 			</div>
-			@if (User.Identity.IsAuthenticated)
+			@if (User!.Identity!.IsAuthenticated)
 			{
 				<a href="/cart.html" class="btn animate">Giỏ Hàng</a>
 				<a href="/checkout.html" class="btn animate">Thanh Toán</a>

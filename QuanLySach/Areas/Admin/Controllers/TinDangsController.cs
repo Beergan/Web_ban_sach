@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AspNetCoreHero.ToastNotification.Abstractions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -13,7 +14,8 @@ using QuanLySach.Models;
 namespace QuanLySach.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class TinDangsController : Controller
+	[Authorize]
+	public class TinDangsController : Controller
     {
         public INotyfService _notyfService { get; }
         private readonly BooksContext _context;
@@ -89,7 +91,7 @@ namespace QuanLySach.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                tinDang.Title = Utilities.ToTitleCase(tinDang.Title);
+                tinDang.Title = Utilities.ToTitleCase(tinDang.Title!);
                     string extension = Path.GetExtension(fThumb.FileName);
                     string image = Utilities.SEOUrl(tinDang.Title) + extension ;
                     tinDang.Thumb = await Utilities.UploadFile(fThumb, @"tinDangs", image.ToLower());
@@ -136,7 +138,7 @@ namespace QuanLySach.Areas.Admin.Controllers
             {
                 try
                 {
-                    tinDang.Title = Utilities.ToTitleCase(tinDang.Title);
+                    tinDang.Title = Utilities.ToTitleCase(tinDang.Title!);
                     if (fThumb != null)
                     {
 

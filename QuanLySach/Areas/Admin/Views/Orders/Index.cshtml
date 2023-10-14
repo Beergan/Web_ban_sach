@@ -57,12 +57,12 @@
                 @foreach (var item in Model)
                 {
                 <tr>
-                    <td>@item.OrderId?</td>
+                    <td>@item.OrderId</td>
                     <td>
-                            @item.Customer?.Email
+                            @item.Customer!.Email
                     </td>
                     <td>
-                            @item.Customer?.Phone
+                            @item.Customer!.Phone
                     </td>
                     <td>
                             @item.Address
@@ -86,15 +86,16 @@
                         
                        @*  <a data-target="#modal-header" data-toggle="modal" class="badge text-bg-info" asp-area="Admin" asp-controller="Orders" asp-action="ChangeStatus" asp-route-id="@item.OrderId">Cập nhật trạng thái</a>
                               *@
-                                <a data-target="#modal fade" data-toggle="modal" class="btn btn-secondary btn-tone m-r-5" asp-area="Admin" asp-controller="Orders" asp-action="ChangeStatus" asp-route-id="@item.OrderId">Cập nhật trạng thái</a>
+                            @*     <a data-target="#modal fade" data-toggle="modal" class="btn btn-secondary btn-tone m-r-5" asp-area="Admin" asp-controller="Orders" asp-action="ChangeStatus" asp-route-id="@item.OrderId">Cập nhật trạng thái</a>
                         <a class="badge text-bg-warning" asp-action="Details" asp-route-id="@item.OrderId">Details</a> 
                         <a class="badge text-bg-danger" asp-action="Delete" asp-route-id="@item.OrderId">Delete</a>
                                 <button data-coreui-target="#exampleModal" data-coreui-toggle="ajax-modal" class="badge text-bg-warning" data-coreui-url="@Url.Action("ChangeStatus")">
                          Trạng Thái
-                        </button>
+                        </button> *@
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"  data-url="@Url.Action("ChangeStatus", "Orders", new { id = item.OrderId })">
                                     cập nhật
                                 </button>
+
                     </td>
                 </tr>
                 }

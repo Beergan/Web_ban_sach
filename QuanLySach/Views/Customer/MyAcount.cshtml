@@ -75,7 +75,7 @@
                                             <tr>
                                                 <td><a class="account-order-id" href="javascript:void(0)">#@item.OrderId</a></td>
                                                 <td>@item.OrderDate</td>
-                                                <td>@item.ShipDate</td>
+                                                <td>@item.ShipDate.ToString("dd/MM/yyyy")</td>
                                                 <td>@item.TransactStatus.Status</td>
                                                 <td>
                                                     <a href="javascript:void(0)" class="xemdonhang" data-madonhang="@item.OrderId">Xem đơn hàng</a>

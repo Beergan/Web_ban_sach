@@ -71,7 +71,7 @@
 								{
 									foreach (var item in Carts)
 									{
-										<li>@item.product.ProductName<span>____@item.TotalMoney.ToString("#,##0")  VND</span><span>SL: @item.amount</span></li>
+										<li>@item.product!.ProductName<span>____@item.TotalMoney.ToString("#,##0")  VND</span><span>SL: @item.amount</span></li>
 									}
 					
 								}

@@ -8,10 +8,12 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using QuanLySach.Models;
 using PagedList.Core;
+using Microsoft.AspNetCore.Authorization;
 
 namespace QuanLySach.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize]
     public class CategoriesController : Controller
     {
         private readonly BooksContext _context;

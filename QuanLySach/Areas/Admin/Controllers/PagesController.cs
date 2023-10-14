@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AspNetCoreHero.ToastNotification.Abstractions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -14,7 +15,8 @@ using QuanLySach.Models;
 namespace QuanLySach.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class PagesController : Controller
+	[Authorize]
+	public class PagesController : Controller
     {
         public INotyfService _notyfService { get; }
         private readonly BooksContext _context;
@@ -96,7 +98,7 @@ namespace QuanLySach.Areas.Admin.Controllers
             
             if (ModelState.IsValid)
             {
-                    page.PageName = Utilities.ToTitleCase(page.PageName);
+                    page.PageName = Utilities.ToTitleCase(page.PageName!);
                     page.CreatedDate = DateTime.Now;
                     if (fThumb != null)
                     {
@@ -150,7 +152,7 @@ namespace QuanLySach.Areas.Admin.Controllers
                 try
                 {
                  
-                    page.PageName = Utilities.ToTitleCase(page.PageName);
+                    page.PageName = Utilities.ToTitleCase(page.PageName!);
                     if (fThumb != null)
                     {
                         string extension = Path.GetExtension(fThumb.FileName);

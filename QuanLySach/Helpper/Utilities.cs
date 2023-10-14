@@ -21,9 +21,9 @@ namespace QuanLySach.Helpper
             }
             catch
             {
-                return null;
+				return null!;
             }
-            return null;
+            return null!;
         }
         public static bool IsValidEmail(string email)
         {
@@ -136,7 +136,7 @@ namespace QuanLySach.Helpper
             }
             return url;
         }
-        public static async Task<string> UploadFile(Microsoft.AspNetCore.Http.IFormFile file, string sDirectory, string newname = null)
+        public static async Task<string> UploadFile(Microsoft.AspNetCore.Http.IFormFile file, string sDirectory, string newname = null!)
         {
             try
             {
@@ -148,7 +148,7 @@ namespace QuanLySach.Helpper
                 var fileExt = System.IO.Path.GetExtension(file.FileName).Substring(1);
                 if (!supportedTypes.Contains(fileExt.ToLower())) /// Khác các file định nghĩa
                 {
-                    return null;
+                    return null!;
                 }
                 else
                 {
@@ -161,7 +161,7 @@ namespace QuanLySach.Helpper
             }
             catch
             {
-                return null;
+                return null!;
             }
         }
     }

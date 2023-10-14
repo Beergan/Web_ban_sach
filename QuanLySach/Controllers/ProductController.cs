@@ -82,7 +82,7 @@ namespace QuanLySach.Controllers
 				var PageNumber = page;
 				var danhmuc = _context.Categories.AsNoTracking().
 					SingleOrDefault(x => x.CatId == CatID);
-				var ls = _context.Products.AsNoTracking().Include(x => x.Cat).Where(x => x.CatId == danhmuc.CatId).
+				var ls = _context.Products.AsNoTracking().Include(x => x.Cat).Where(x => x.CatId == danhmuc!.CatId).
 					OrderByDescending(x => x.DateCreated);
 
 				PagedList<Product> lsProducts = new PagedList<Product>(ls, PageNumber, PageSize);

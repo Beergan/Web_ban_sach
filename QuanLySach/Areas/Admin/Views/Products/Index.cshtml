@@ -66,13 +66,13 @@
                                     </div>
                                 </td>
                                 <td>
-                                 @item.Cat.CatName
+                                 @item.Cat!.CatName
                                 </td>
 
                                 <td>@item.Price VNĐ</td>
                                 <td>@item.UnitsInStock</td>
                                 <td>
-                                    @if (item.UnitsInStock.Value > 0)
+                                    @if (item.UnitsInStock!.Value > 0)
                                     {
                                         <div class="d-flex align-items-center">
                                             <div class="btn btn-success rounded-pill">Còn Hàng</div>

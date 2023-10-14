@@ -31,7 +31,7 @@
 								List<string> catNames = new List<string>();
 								foreach (var item in Model )
 								{
-									string catName = item.Cat.CatName;
+									string catName = item.Cat!.CatName!;
 									if (!catNames.Contains(catName))
 									{
 										string urls = $"/danhmuc/{@item.CatId}.html";

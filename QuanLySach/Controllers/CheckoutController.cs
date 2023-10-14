@@ -32,7 +32,7 @@ namespace QuanLySach.Controllers
 			}
 		}
 		[Route("checkout.html", Name = "Checkout")]
-		public IActionResult Index(string returnUrl = null)
+		public IActionResult Index(string? returnUrl = null)
 		{
 			//Lay gio hang ra de xu ly
 			List<CartItemS> cart = HttpContext.Session.Get<List<CartItemS>>("GioHang");
@@ -41,7 +41,7 @@ namespace QuanLySach.Controllers
 			if (taikhoanID != null)
 			{
 				var khachhang = _context.Customers.AsNoTracking().SingleOrDefault(x => x.CustomerId == Convert.ToInt32(taikhoanID));
-				model.CustomerId = khachhang.CustomerId;
+				model.CustomerId = khachhang!.CustomerId;
 				model.FullName = khachhang.FullName;
 				model.Email = khachhang.Email;
 				model.Phone = khachhang.Phone;
@@ -62,11 +62,16 @@ namespace QuanLySach.Controllers
 			if (taikhoanID != null)
 			{
 				var khachhang = _context.Customers.AsNoTracking().SingleOrDefault(x => x.CustomerId == Convert.ToInt32(taikhoanID));
-				model.CustomerId = khachhang.CustomerId;
+				model.CustomerId = khachhang!.CustomerId;
 				model.FullName = khachhang.FullName;
 				model.Email = khachhang.Email;
 				model.Phone = khachhang.Phone;
-				model.Address = khachhang.Address;
+				khachhang.Address = muaHang.Address;
+
+
+			
+				
+
 				_context.Update(khachhang);
 				_context.SaveChanges();
 			}
@@ -82,7 +87,7 @@ namespace QuanLySach.Controllers
 					donhang.TransactStatusId = 1;//Don hang moi
 					donhang.Deleted = false;
 					donhang.Paid = false;
-					donhang.Note = Utilities.StripHTML(model.Note);
+					donhang.Note = Utilities.StripHTML(model.Note!);
 					donhang.TotalMoney = Convert.ToInt32(cart.Sum(x => x.TotalMoney));
 					_context.Add(donhang);
 					_context.SaveChanges();
@@ -91,14 +96,14 @@ namespace QuanLySach.Controllers
 					{
 						OrderDetail orderDetail = new OrderDetail();
 						orderDetail.OrderId = donhang.OrderId;
-						orderDetail.ProductId = item.product.ProductId;
+						orderDetail.ProductId = item.product!.ProductId;
 						orderDetail.Amount = item.amount;
 						orderDetail.TotalMoney = donhang.TotalMoney;
 						orderDetail.Price = item.product.Price;
 						orderDetail.CreateDate = DateTime.Now;
 						_context.Add(orderDetail);
 					}
-					_context.SaveChanges();
+                    
 					//clear gio hang
 					HttpContext.Session.Remove("GioHang");
 					//Xuat thong bao
@@ -133,11 +138,13 @@ namespace QuanLySach.Controllers
 					.OrderByDescending(x => x.OrderDate)
 					.FirstOrDefault();
 				MuaHangSuccessVM successVM = new MuaHangSuccessVM();
-				successVM.FullName = khachhang.FullName;
-				successVM.DonHangID = donhang.OrderId;
+				successVM.FullName = khachhang!.FullName;
+				successVM.DonHangID = donhang!.OrderId;
 				successVM.Phone = khachhang.Phone;
 				successVM.Address = khachhang.Address;
-				return View(successVM);
+				
+				
+                return View(successVM);
 			}
 			catch
 			{

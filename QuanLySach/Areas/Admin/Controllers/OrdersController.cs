@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AspNetCoreHero.ToastNotification.Abstractions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -12,7 +13,8 @@ using QuanLySach.Models;
 namespace QuanLySach.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class OrdersController : Controller
+	[Authorize]
+	public class OrdersController : Controller
     {
         private readonly BooksContext _context;
         public INotyfService _notyfService { get; }
@@ -86,7 +88,7 @@ namespace QuanLySach.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            if (ModelState.IsValid)
+            if (id == order.OrderId)
             {
                 try
                 {
@@ -100,10 +102,10 @@ namespace QuanLySach.Areas.Admin.Controllers
                         {
                             donhang.PaymentDate = DateTime.Now;
                         }
-                        if (donhang.TransactStatusId == 5) donhang.Deleted = true;
-                        if (donhang.TransactStatusId == 3) donhang.ShipDate = DateTime.Now;
+                        if (donhang.TransactStatusId == 4) donhang.Deleted = true;
+                        if (donhang.TransactStatusId == 2) { donhang.ShipDate = DateTime.Now.AddDays(3); }
                     }
-                    _context.Update(donhang);
+                    _context.Update(donhang!);
                     await _context.SaveChangesAsync();
                     _notyfService.Success("Cập nhật trạng thái đơn hàng thành công");
 
@@ -160,7 +162,7 @@ namespace QuanLySach.Areas.Admin.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var order = await _context.Orders.FindAsync(id);
-             order.Deleted = true ;
+             order!.Deleted = true ;
             _context.Update(order);
             await _context.SaveChangesAsync();
             _notyfService.Success("Xóa đơn hàng thành công");

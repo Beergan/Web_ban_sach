@@ -15,7 +15,8 @@ using QuanLySach.Models;
 namespace QuanLySach.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class ProductsController : Controller
+	[Authorize]
+	public class ProductsController : Controller
     {
         public INotyfService _notyfService { get; }
         private readonly BooksContext _context;

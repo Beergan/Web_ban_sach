@@ -13,7 +13,7 @@ namespace QuanLySach.ModelsView
 		[Required(ErrorMessage = "Vui lòng nhập số điện thoại")]
 		public string ? Phone { get; set; }
 		[Required(ErrorMessage = "Địa chỉ nhận hàng")]
-		public string ? Address { get; set; }
+        public string? Address { get; set; }
 		[Required(ErrorMessage = "Vui lòng chọn Tỉnh/Thành")]
 		public int TinhThanh { get; set; }
 		[Required(ErrorMessage = "Vui lòng chọn Quận/Huyện")]

@@ -10,9 +10,9 @@
 <div>
    
     <hr />
-    <dd class="col-sm-10">
+    <div class="col-sm-10">
         <img class="img-slider" style="max-width: 100px" src="~/images/tindangs/@Model.Thumb">
-    </dd>
+    </div>
     <dl class="row">
         <dt class = "col-sm-2">
             Tên:
@@ -67,7 +67,7 @@
             Danh Mục
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Cat.CatName)
+            @Html.DisplayFor(model => model.Cat!.CatName)
         </dd>
         <dt class = "col-sm-2">
             Hot

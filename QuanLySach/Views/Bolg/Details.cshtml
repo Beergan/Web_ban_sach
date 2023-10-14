@@ -28,7 +28,7 @@
 									<div class="blog-detail">
 										<h2 class="blog-title">@Model.Title</h2>
 										<div class="blog-meta">
-											<span class="author"><a href="#"><i class="fa fa-user"></i>@Model.Author</a><a href="#"><i class="fa fa-calendar"></i>@Model.CreatedDate.Value.ToShortDateString()</a><a href="#"><i class="fa fa-comments"></i>Comment (15)</a></span>
+											<span class="author"><a href="#"><i class="fa fa-user"></i>@Model.Author</a><a href="#"><i class="fa fa-calendar"></i>@Model.CreatedDate!.Value.ToShortDateString()</a><a href="#"><i class="fa fa-comments"></i>Comment (15)</a></span>
 										</div>
 										<div class="content">
 											@Html.Raw(@Model.Contents)
@@ -149,7 +149,7 @@
 						<h3 class="title"> Danh Mục Blog</h3>
 					
 						<ul class="categor-list">
-							<li><a href="#">@Model.Cat.CatName</a></li>
+							<li><a href="#">@Model!.Cat!.CatName</a></li>
 							<li><a href="#">Women's Apparel</a></li>
 							<li><a href="#">Bags Collection</a></li>
 							<li><a href="#">Accessories</a></li>
@@ -176,7 +176,7 @@
 									<div class="content">
 										<h5><a href="@_url">@item.Title</a></h5>
 										<ul class="comment">
-											<li><i class="fa fa-calendar" aria-hidden="true"></i>@item.CreatedDate.Value.ToShortDateString()</li>
+											<li><i class="fa fa-calendar" aria-hidden="true"></i>@item.CreatedDate!.Value.ToShortDateString()</li>
 											<li><i class="fa fa-commenting-o" aria-hidden="true"></i>35</li>
 										</ul>
 									</div>

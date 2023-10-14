@@ -1,11 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace QuanLySach.Areas.Admin.Controllers
 {
+    
     [Area("Admin")]
-    public class HomeController : Controller
-    {
-        public IActionResult Index()
+    [Route("admin.html", Name = "AdminIndex")]
+    [Authorize]
+	public class HomeController : Controller
+	{// GET: /<controller>/
+		public IActionResult Index()
         {
             return View();
         }

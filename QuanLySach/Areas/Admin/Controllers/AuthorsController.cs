@@ -10,10 +10,12 @@ using PagedList.Core;
 using AspNetCoreHero.ToastNotification.Abstractions;
 using AspNetCoreHero.ToastNotification.Notyf;
 using System.Drawing.Printing;
+using Microsoft.AspNetCore.Authorization;
 
 namespace QuanLySach.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize]
     public class AuthorsController : Controller
     {
         private readonly BooksContext _context;

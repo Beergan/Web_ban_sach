@@ -16,12 +16,12 @@ namespace QuanLySach.Areas.Admin.Controllers
     public class AdminLoginController : Controller
     {
         private readonly BooksContext _context;
-        public INotyfService notyfService { get;  }
+        public INotyfService _notyfService { get;  }
         public AdminLoginController(
             BooksContext context, INotyfService notyfService)
         {
             _context = context;
-            this.notyfService = notyfService;
+            _notyfService = notyfService;
         }
         // GET: /<controller>/
         public ActionResult Index()
@@ -80,9 +80,12 @@ namespace QuanLySach.Areas.Admin.Controllers
 
 
                     };
-                    var Identity = new ClaimsIdentity(Claims, "Claims");
+                    var Identity = new ClaimsIdentity(Claims, "User Identity");
+                    Identity.AddClaim(new Claim(ClaimTypes.Role, "Admin"));
                     var Principal = new ClaimsPrincipal(new[] { Identity });
-                    return RedirectToAction("Index", "Home", new {Area = "Admin"});
+
+					await HttpContext.SignInAsync(Principal);
+					return RedirectToAction("Index", "Home", new {Area = "Admin"});
                 }
             }
             catch

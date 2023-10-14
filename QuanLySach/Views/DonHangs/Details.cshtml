@@ -1,13 +1,13 @@
 ﻿@model QuanLySach.ModelsView.DonHang
 @{
-    var total = Model.ChiTietDonHang.Sum(x => x.TotalMoney).Value.ToString("#,##0");
+    var total = Model.ChiTietDonHang!.Sum(x => x.TotalMoney)!.Value.ToString("#,##0");
 }
-<h3>Thông tin đơn hàng: #@Model.XemDonHang.OrderId</h3>
+<h3>Thông tin đơn hàng: #@Model.XemDonHang!.OrderId</h3>
 <br />
 <p>Ngày đặt hàng: @Model.XemDonHang.OrderDate</p>
 <p>Trạng thái đơn hàng: @Model.XemDonHang.TransactStatus.Status</p>
 <p>Tổng giá trị đơn hàng: <strong> @total VNĐ</strong></p>
-<p>Ngày ship hàng: @Model.XemDonHang.ShipDate</p>
+<p>Ngày ship hàng: @Model.XemDonHang.ShipDate.ToString("dd/MM/yyyy")</p>
  
 <div class="table-responsive">
     <table class="table table-bordered table-hover">
@@ -20,14 +20,14 @@
                 <th>Thành tiền</th>
             </tr>
 
-            @foreach (var item in Model.ChiTietDonHang )
+            @foreach (var item in Model.ChiTietDonHang! )
             {
                 <tr>
                     <td>@item.ProductId</td>
-                    <td>@item.Product.ProductName</td>
+                    <td>@item.Product!.ProductName</td>
                     <td>@item.Amount</td>
                     <td>@item.Product.ProductName</td>
-                    <td>@item.TotalMoney.Value.ToString("#,##0") VNĐ</td>
+                    <td>@item.TotalMoney!.Value.ToString("#,##0") VNĐ</td>
                 </tr>
             }
         </tbody>

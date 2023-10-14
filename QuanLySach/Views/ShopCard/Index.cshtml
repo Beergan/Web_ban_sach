@@ -26,7 +26,7 @@
 							foreach (var item in Model)
 							{
 								<tr>
-									<td class="image" data-title="No"><img src="~/images/products/@item.product.Thumb" alt="#"></td>
+									<td class="image" data-title="No"><img src="~/images/products/@item.product!.Thumb" alt="#"></td>
 									<td class="product-des" data-title="Description">
 										<p class="product-name"><a href="#">@item.product.ProductName</a></p>
 										<p class="product-des">@item.product.Title</p>
@@ -42,7 +42,7 @@
 										
 									</td>
 										<!--/ End Input Order -->
-									</td>
+									
 										<!--/ End Input Order -->
 									
 									<td class="total-amount" data-title="Total"><span>@item.TotalMoney.ToString("#,##0")</span></td>
@@ -80,11 +80,11 @@
 						<div class="col-lg-4 col-md-7 col-12">
 							<div class="right">
 								<ul>
-									<li>Tổng tiền<span>@Model.Sum(x=>x.TotalMoney).ToString("#,##0")</span></li>
+									<li>Tổng tiền<span>@Model!.Sum(x=>x.TotalMoney).ToString("#,##0")</span></li>
 									<li>Shipping<span>Free</span></li>
-									<li class="last">Thanh Toán<span>@Model.Sum(x=>x.TotalMoney).ToString("#,##0")</span></li>
+									<li class="last">Thanh Toán<span>@Model!.Sum(x=>x.TotalMoney).ToString("#,##0")</span></li>
 								</ul>
-								@if (User.Identity.IsAuthenticated)
+								@if (User.Identity!.IsAuthenticated)
 								{
 									<div class="button5">
 										<a href="#" class="btn">Checkout</a>

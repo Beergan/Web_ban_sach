@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using QuanLySach.Models;
@@ -12,7 +13,8 @@ using QuanLySach.Models;
 namespace QuanLySach.Areas.Admin.Controllerst
 {
     [Area("Admin")]
-    public class SearchController : Controller
+	[Authorize]
+	public class SearchController : Controller
     {
         private readonly BooksContext _context;
 
@@ -55,7 +57,7 @@ namespace QuanLySach.Areas.Admin.Controllerst
             }
             ls = _context.CharBsts.AsNoTracking()
                                   .Include(a => a.Product)
-                                  .Where(x => x.CharName.Contains(keyword))
+                                  .Where(x => x.CharName!.Contains(keyword))
                                   .OrderByDescending(x => x.CharName)
                                   .Take(10)
                                   .ToList();
@@ -78,7 +80,7 @@ namespace QuanLySach.Areas.Admin.Controllerst
             }
             ls = _context.Pages.AsNoTracking()
                                   .Include(a => a.Cat)
-                                  .Where(x => x.PageName.Contains(keyword))
+                                  .Where(x => x.PageName!.Contains(keyword))
                                   .OrderByDescending(x => x.CreatedDate)
                                   .Take(10)
                                   .ToList();
@@ -101,7 +103,7 @@ namespace QuanLySach.Areas.Admin.Controllerst
             }
             ls = _context.TinDangs.AsNoTracking()
                                   .Include(a => a.Cat)
-                                  .Where(x => x.Title.Contains(keyword))
+                                  .Where(x => x.Title!.Contains(keyword))
                                   .OrderByDescending(x => x.CreatedDate)
                                   .Take(10)
                                   .ToList();

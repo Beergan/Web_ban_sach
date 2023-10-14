@@ -38,20 +38,20 @@ namespace QuanLySach.Controllers
             try
             {
                 //Them san pham vao gio hang
-                CartItemS item = cart.SingleOrDefault(p => p.product.ProductId == productID);
+                CartItemS? item = cart.SingleOrDefault(p => p.product!.ProductId == productID);
                 if (item != null) // da co => cap nhat so luong
                 {
-                    item.amount = item.amount + amount.Value;
+                    item.amount = item.amount + amount!.Value;
                     //luu lai session
                     HttpContext.Session.Set<List<CartItemS>>("GioHang", cart);
                 }
                 else
                 {
-                    Product hh = _context.Products.SingleOrDefault(p => p.ProductId == productID);
+                    Product? hh = _context.Products.SingleOrDefault(p => p.ProductId == productID);
                     item = new CartItemS
                     {
                         amount = amount.HasValue ? amount.Value : 1,
-                        product = hh
+                        product = hh!
                     };
                     cart.Add(item);//Them vao gio
                 }
@@ -76,7 +76,7 @@ namespace QuanLySach.Controllers
             {
                 if (cart != null)
                 {
-                    CartItemS item = cart.SingleOrDefault(p => p.product.ProductId == productID);
+                    CartItemS? item = cart.SingleOrDefault(p => p.product!.ProductId == productID);
                     if (item != null && amount.HasValue) // da co -> cap nhat so luong
                     {
                         item.amount = amount.Value;
@@ -100,7 +100,7 @@ namespace QuanLySach.Controllers
             try
             {
                 List<CartItemS> gioHang = GioHang;
-                CartItemS item = gioHang.SingleOrDefault(p => p.product.ProductId == productID);
+                CartItemS? item = gioHang.SingleOrDefault(p => p.product!.ProductId == productID);
                 if (item != null)
                 {
                     gioHang.Remove(item);
